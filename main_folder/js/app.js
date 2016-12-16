@@ -21,25 +21,25 @@
 
         //load json file depend which button is clicked
         $scope.loadAnimalsData = function() {
-            $http.get('jsonFiles/zwierzeta.json').then(function(data) {
+            $http.get('json_files/zwierzeta.json').then(function(data) {
                 $scope.words = data;
                 console.log($scope.words);
             });
         }
         $scope.loadWeatherData = function() {
-            $http.get('jsonFiles/pogoda.json').then(function(data) {
+            $http.get('json_files/pogoda.json').then(function(data) {
                 $scope.words = data;
                 console.log($scope.words);
             });
         }
         $scope.loadSportData = function() {
-            $http.get('jsonFiles/sport.json').then(function(data) {
+            $http.get('json_files/sport.json').then(function(data) {
                 $scope.words = data;
                 console.log($scope.words);
             });
         }
         $scope.loadFoodData = function() {
-            $http.get('jsonFiles/jedzenie.json').then(function(data) {
+            $http.get('json_files/jedzenie.json').then(function(data) {
                 $scope.words = data;
                 console.log($scope.words);
             });

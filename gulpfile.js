@@ -11,18 +11,18 @@ gulp.task('reload', function() {
 gulp.task('serve', ['sass'], function() {
 
 	browserSync({
-		server:'portfolio'
+		server:'main_folder'
 	});
 
-	gulp.watch('portfolio/*.html', ['reload']);
-	gulp.watch('portfolio/scss/**/*.scss', ['sass']);
+	gulp.watch('main_folder/*.html', ['reload']);
+	gulp.watch('main_folder/scss/**/*.scss', ['sass']);
 });
 
 gulp.task('sass', function() {
 
-	return gulp.src('portfolio/scss/**/*.scss')	
+	return gulp.src('main_folder/scss/**/*.scss')	
 		   .pipe(sass().on('error', sass.logError))
-		   .pipe(gulp.dest('portfolio/css'))
+		   .pipe(gulp.dest('main_folder/css'))
 		   .pipe(browserSync.stream());      
 });
 
