@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="mainApp">
+	<head>
+		<meta charset="utf-8">
+		<!-- first bootstrap, second style.css -->
+		<title>Apka</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/stylesForTask.css">
+		<link rel="stylesheet" href="fontello/css/fontello.css">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	</head>
+	<body ng-controller="mainController">
+		<!-- navigation -->
+
+		<nav class="topbarWithTitle">
+			<h1>Check Your vocabulary!</h1>
+		</nav>
+		<!-- ng-view -->
+		<div ng-view></div>
+		<!-- libraries -->
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/angular-route/angular-route.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
