@@ -21,25 +21,25 @@
 
         //load json file depend which button is clicked
         $scope.loadAnimalsData = function() {
-            $http.get('json_files/zwierzeta.json').then(function(data) {
+            $http.get('json_files/zwierzeta.json').success(function(data) {
                 $scope.words = data;
                 console.log($scope.words);
             });
         }
         $scope.loadWeatherData = function() {
-            $http.get('json_files/pogoda.json').then(function(data) {
+            $http.get('json_files/pogoda.json').success(function(data) {
                 $scope.words = data;
                 console.log($scope.words);
             });
         }
         $scope.loadSportData = function() {
-            $http.get('json_files/sport.json').then(function(data) {
+            $http.get('json_files/sport.json').success(function(data) {
                 $scope.words = data;
                 console.log($scope.words);
             });
         }
         $scope.loadFoodData = function() {
-            $http.get('json_files/jedzenie.json').then(function(data) {
+            $http.get('json_files/jedzenie.json').success(function(data) {
                 $scope.words = data;
                 console.log($scope.words);
             });
@@ -93,7 +93,6 @@
             $scope.guessNum = 0;
             $scope.wordGuessed = true;
             $scope.alertDanger = false;
-            $scope.chosenWord = "";
             $scope.nextButton = true;
             $scope.loseAlert = false;
             $scope.isAlreadyDrawn = [];
